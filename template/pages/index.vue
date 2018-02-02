@@ -1,53 +1,36 @@
-{{{{raw}}}}
 <template>
   <section class="container">
     <img src="~assets/img/NuxtMicro.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      USERS
+    <h1>
+      NUXT MICRO TEST
     </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}" class="button">
-          {{ user.name }}
-        </nuxt-link>
+    <ul>
+      <li>
+        <nuxt-link to="/users" class="button">Users</nuxt-link>
       </li>
     </ul>
   </section>
 </template>
-{{{{/raw}}}}
-<script>
-import axios from '~/plugins/axios'
 
+<script>
 export default {
-  data () {
-    return {
-      users: []
-    }
-  },
-  async asyncData () {
-    const {data} = await axios.get('/api/users')
-    return {users: data}
-  },
-  head () {
-    return {
-      title: 'Users'
-    }
-  }
+  head () { return { title: 'NUXT MICRO TEST' } }
 }
 </script>
 
 <style scoped>
-.title
+h1
 {
+  font-size: 2em;
   margin: 30px 0;
 }
-.users
+ul
 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.user
+li
 {
   margin: 10px 0;
 }

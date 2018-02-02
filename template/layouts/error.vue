@@ -1,6 +1,5 @@
-{{{{raw}}}}
 <template>
-  <section class="container">
+  <section class="container error">
     <img src="~assets/img/NuxtMicro.png" alt="NuxtMicro.js Logo" class="logo" />
     <h1 class="title">
       {{ error.statusCode }}
@@ -13,27 +12,17 @@
     </nuxt-link>
   </section>
 </template>
-{{{{/raw}}}}
 <script>
 export default {
-  props: ['error']
+  props: ['error'],
+  head () {
+    return {
+      title: `Error: ${this.error.message}`
+    }
+  }
 }
 </script>
 
 <style scoped>
-.title
-{
-  margin-top: 15px;
-  font-size: 5em;
-}
-.info
-{
-  font-weight: 300;
-  color: #9aabb1;
-  margin: 0;
-}
-.button
-{
-  margin-top: 50px;
-}
+
 </style>

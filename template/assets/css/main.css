@@ -1,7 +1,6 @@
 html, body
 {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
   letter-spacing: 0.5px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   height: 100vh;
@@ -15,9 +14,10 @@ footer
   border-top: 1px solid #ddd;
 }
 
-a, a:hover, a:focus, a:visited
+html, body, .button, .button:visited, .button:hover, .button:focus,
+a, a:hover, a:focus, a:visited, .title
 {
-  color: #000;
+  color: #fff;
 }
 
 .logo {
@@ -25,4 +25,46 @@ a, a:hover, a:focus, a:visited
   height: auto;
   max-width: 400px;
   max-height: 289px;
+}
+
+.container
+{
+  margin: 0;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.button, .button:visited
+{
+  box-sizing: border-box;
+  min-width: 200px;
+  display: inline-block;
+  letter-spacing: 1px;
+  background-color: #000;
+  border: 2px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.button:hover, .button:focus
+{
+  color: #000;
+  background-color: #fff;
+}
+
+.title
+{
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.info
+{
+  font-weight: 300;
+  color: #9aabb1;
+  margin: 10px 0 30px;
 }
