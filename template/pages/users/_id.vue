@@ -1,3 +1,4 @@
+{{{{raw}}}}
 <template>
   <section class="container">
     <img :src="image()" :alt="`${user.name}'s photo`" class="user-photo" />
@@ -6,6 +7,7 @@
     <nuxt-link class="button" to="/users">Users</nuxt-link>
   </section>
 </template>
+{{{{/raw}}}}
 <script>
 
 import axios from '~/plugins/axios'

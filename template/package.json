@@ -5,7 +5,7 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "micro server -w server",
+    "dev": "micro-dev server -w server",
     "build": "nuxt build",
     "start": "NODE_ENV=production micro server",
     "precommit": "npm run lint",

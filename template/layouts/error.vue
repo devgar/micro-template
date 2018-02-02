@@ -1,3 +1,4 @@
+{{{{raw}}}}
 <template>
   <section class="container error">
     <img src="~assets/img/NuxtMicro.png" alt="NuxtMicro.js Logo" class="logo" />
@@ -12,6 +13,7 @@
     </nuxt-link>
   </section>
 </template>
+{{{{/raw}}}}
 <script>
 export default {
   props: ['error'],

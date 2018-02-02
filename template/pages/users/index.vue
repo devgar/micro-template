@@ -1,10 +1,11 @@
+{{{{raw}}}}
 <template>
   <section class="container">
     <h1>
       USERS
     </h1>
     <ul>
-      <li v-for="(user, index) in users">
+      <li v-for="user in users">
         <nuxt-link :to="{ name: 'users-id', params: { id: user.id }}" class="button">
           {{ user.name }}
         </nuxt-link>
@@ -18,7 +19,7 @@
     <nuxt-link to="/" class="button">HOME</nuxt-link>
   </section>
 </template>
-
+{{{{/raw}}}}
 <script>
 import axios from '~/plugins/axios'
 
