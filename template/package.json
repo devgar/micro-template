@@ -16,7 +16,7 @@
     "fs-router": "^0.4.0",
     "micro": "^9.0.0",
     "micro-body": "^0.1.1",
-    "nuxt": "1.4.0"
+    "nuxt": "^1.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
